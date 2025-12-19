@@ -82,22 +82,21 @@ public class Main {
         int one = 2;
         int two = 4;
         int three = 1;
-        if (one > two) {
-            System.out.println("one больше two");
-        } else {
-            System.out.println("one меньше two");
-        }
-        if (two > three) {
-            System.out.println("two больше three");
-        } else {
-            System.out.println("two меньше three");
-        }
-        if (one > three) {
-            System.out.println("one больше three");
-        } else {
-            System.out.println("one меньше three");
-        }
 
+        //
+        if (one >= two) {
+            if (one >= three) {
+                System.out.println("Наибольшее число: " + one);
+            } else {
+                System.out.println("Наибольшее число: " + three);
+            }
+        } else {
+            if (two >= three) {
+                System.out.println("Наибольшее число: " + two);
+            } else {
+                System.out.println("Наибольшее число: " + three);
+            }
 
+        }
     }
 }
